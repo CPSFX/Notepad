@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0e68c"
+    tools:context=".Update_Text">
+    <TextView
+        android:id="@+id/update_Time"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:background="#f0e68c"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#f0e68c"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/cp" />
+        <TextView
+            android:layout_marginLeft="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="记事本"/>
+
+        <Button
+            android:id="@+id/update_text"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="1dp"
+            android:background="#e9967a"
+            android:text="更新"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/update_return_text"
+            android:layout_width="wrap_content"
+            android:background="#e9967a"
+            android:layout_height="70dp"
+            android:textSize="30dp"
+            android:text="返回"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/update_title"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:hint="请输入标题"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/update_name"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:gravity="top|left"
+        android:hint="请输入作者"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/update_context"
+        android:layout_width="match_parent"
+        android:layout_height="508dp"
+        android:gravity="top|left"
+        android:hint="请输入内容"
+        android:textSize="30dp" />
+
+</LinearLayout>
